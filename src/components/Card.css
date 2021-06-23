@@ -1,6 +1,6 @@
 .card-text{
     position: absolute;
-    top: 40%;
+    top: 100;
     left: 30%;
     opacity: 0;
 }
@@ -16,3 +16,4 @@
     opacity: 1;
     cursor: pointer;
 }
+

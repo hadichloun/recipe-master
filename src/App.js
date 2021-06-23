@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
-import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import { BrowserRouter as Router, Redirect, Route, Switch} from 'react-router-dom';
 import Callback from './components/Callback';
 import Recipes from './components/Recipes';
 import Main from './components/Main';
-// import Header from './components/Header';
+import Login from './components/Login';
+
 
 
 function App() {
+const [isloggedIn, setIsLoggedIn ] = useState(false);
+
+const token = localStorage.getItem('token')
+
   return (
     <div className="App">
       <Header />
@@ -27,7 +32,7 @@ function App() {
           <Main message="404 Page Not Found" showbutton="false"/>
       </Route>
       <Route exact path="/recipes">
-          <Recipes message="Welcome to recipes" showbutton="false"/>
+         {token ?  <Recipes message="Welcome to recipes" showbutton="false"/> : <Redirect to='/login' />}
       </Route>
       <Route exact path="/loginFailed">
           <Main message="Login Failed. Try Again" showbutton="true"/>
