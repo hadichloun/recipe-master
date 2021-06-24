@@ -9,7 +9,7 @@ const Main = props => {
     const history = useHistory();
 
     const signIn = () => {
-        localStorage.setItem('token', 'xdjswjw34867675')
+        localStorage.setItem('token', '12345')
          window.location = '/recipes'
     }
     return(

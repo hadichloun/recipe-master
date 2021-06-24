@@ -2,10 +2,6 @@ import React from 'react';
 
 const Header = (props) => {
 
-  const logout = ()=> {
-     localStorage.removeItem('token');
-     window.location = '/'
-  }
     return(
         <div className="Header">
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -24,9 +20,9 @@ const Header = (props) => {
               <a className="nav-link" href="/about">About</a>
             </li>
 
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a className="nav-link" onClick={logout} href="#">logout</a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </nav>

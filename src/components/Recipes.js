@@ -24,6 +24,12 @@ const Recipes = () => {
             setQuery('')
     }
 
+    const logout = ()=> {
+        localStorage.removeItem('token')
+        window.location = '/'
+       
+     }
+
     return (
         <div>
 
@@ -31,6 +37,8 @@ const Recipes = () => {
             <form onSubmit={handleSubmit}>
                 <input type='text' value={query} placeholder='search recipes' onChange={(e) => setQuery(e.target.value)} />
                 <input type='submit' value='search' />
+              <button className="logoutbutton" onClick={logout} href="#">logout</button>
+           
             </form>
 
             <div className='recipes'>
@@ -39,6 +47,8 @@ const Recipes = () => {
             }
 
             </div>
+
+             
 
            
         </div>
