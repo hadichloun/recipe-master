@@ -11,7 +11,7 @@ img:hover{
 }
 
 button{
-    color: aqua !important;
+    color: black !important;
 }
 
 .loading{
@@ -25,4 +25,15 @@ button{
 .backbutton{
     padding-top: 30px;
     padding-bottom: 50px;;
+}
+
+.recipes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  height: auto; 
+    gap: 20px;
+}
+
+.recipes > * {
+    width: 60%;
 }

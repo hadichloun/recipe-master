@@ -10,14 +10,19 @@ const Main = props => {
 
     const signIn = () => {
         localStorage.setItem('token', 'xdjswjw34867675')
-       history.push('/recipes')
+         window.location = '/recipes'
     }
     return(
         <div className="Main">
             <h1>{props.message}</h1>
             {props.showbutton === "false" ? 
                 <p>hope you enjoyed our recipes </p>  : 
-                <button type="button" onClick={signIn} className="btn btn-primary btn-lg">Sign In</button> }
+               <>
+               <input type='text' placeholder='email' />
+               <input type='text' placeholder='password' />
+                <button type="button" onClick={signIn} className="btn btn-primary btn-lg">Sign In</button>
+                </>
+                 }
         </div>
     )
 }

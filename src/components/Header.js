@@ -1,6 +1,11 @@
 import React from 'react';
 
 const Header = (props) => {
+
+  const logout = ()=> {
+     localStorage.removeItem('token');
+     window.location = '/'
+  }
     return(
         <div className="Header">
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -13,9 +18,14 @@ const Header = (props) => {
           <ul className="navbar-nav ml-auto">  
             <li className="nav-item active">
               <a className="nav-link" href="/recipes">Recipes</a>
+              
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/about">About</a>
+            </li>
+
+            <li className="nav-item">
+              <a className="nav-link" onClick={logout} href="#">logout</a>
             </li>
           </ul>
         </div>

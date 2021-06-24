@@ -20,7 +20,7 @@ const token = localStorage.getItem('token')
       <Router>
     <Switch>
       <Route exact path="/">
-          <Main message="Welcome to Recipe Master.com" showbutton="true"/>
+          <Main message="Welcome to Recipe Master" showbutton="true"/>
       </Route>
       <Route exact path="/about">
           <Main message="Thank you for visiting us" showbutton="false"/>
@@ -32,7 +32,7 @@ const token = localStorage.getItem('token')
           <Main message="404 Page Not Found" showbutton="false"/>
       </Route>
       <Route exact path="/recipes">
-         {token ?  <Recipes message="Welcome to recipes" showbutton="false"/> : <Redirect to='/login' />}
+         {token ?  <Recipes message="Welcome to recipes" showbutton="false"/> : <Redirect to='/' />}
       </Route>
       <Route exact path="/loginFailed">
           <Main message="Login Failed. Try Again" showbutton="true"/>

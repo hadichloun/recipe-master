@@ -11,7 +11,7 @@ const Card = ({recipe}) => {
     }
     return(
           
-        <div className="col-sm-3">
+        <div className="">
             <div className="card">
                 <img className="card-img-top img-fluid" src={recipe.image} alt="Card"/>
                 <h2 className="card-text">{recipe.label.toUpperCase()}</h2>

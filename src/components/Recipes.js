@@ -33,10 +33,14 @@ const Recipes = () => {
                 <input type='submit' value='search' />
             </form>
 
+            <div className='recipes'>
             {
                 recipes && recipes.map(recipe => <Card key={uuidv4()} recipe={recipe.recipe} />)
             }
 
+            </div>
+
+           
         </div>
     )
 }
