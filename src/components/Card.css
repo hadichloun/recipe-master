@@ -17,3 +17,16 @@
     cursor: pointer;
 }
 
+.like-btn {
+    /* color: red; */
+    /* background-color: seashell; */
+    /* display: inline-block; */
+    /* height: 50px; */
+    /* margin: 0 10px; */
+    /* position: relative; */
+    /* top: 0; */
+    /* transform: rotate(-45deg); */
+    position:-webkit-sticky;
+    /* left: 45%; top: 45%; */
+    /* width: 50px; */
+  }

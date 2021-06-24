@@ -19,7 +19,7 @@ const Main = props => {
                 <p>hope you enjoyed our recipes </p>  : 
                <>
                <input type='text' placeholder='email' />
-               <input type='text' placeholder='password' />
+               <input type='password' placeholder='password' />
                 <button type="button" onClick={signIn} className="btn btn-primary btn-lg">Sign In</button>
                 </>
                  }
