@@ -1,14 +1,15 @@
 .Main{
-    height: 93vh;
-    /* background: url("./public/pexels-polina-kovaleva-8100517.jpg"); */
+    height: 93vh; 
+    background-image: url("https://images.unsplash.com/reserve/EnF7DhHROS8OMEp2pCkx_Dufer%20food%20overhead%20hig%20res.jpg?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1057&q=80");
     /* background-image:linear-gradient(90deg, rgb(56, 40, 233) 0%, rgb(122, 194, 128) 42%, rgb(255, 136, 0) 96%); */
-    background: rgb(255, 145, 0);
+    /* background: rgb(255, 145, 0); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: #ffffff !important;
 }
-
-/* background: linear-gradient(90deg, rgba(225,224,237,1) 0%, rgba(122,194,191,1) 42%, rgba(0,212,255,1) 96%); */
-

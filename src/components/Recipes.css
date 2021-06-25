@@ -28,12 +28,23 @@ button{
 }
 
 .recipes{
+    background-image: url("https://images.unsplash.com/reserve/EnF7DhHROS8OMEp2pCkx_Dufer%20food%20overhead%20hig%20res.jpg?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1057&q=80");
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-  height: auto; 
+    height: auto; 
     gap: 20px;
 }
 
 .recipes > * {
     width: 60%;
+    
 }
+
+.recipes{
+    background-image: url("https://images.unsplash.com/reserve/EnF7DhHROS8OMEp2pCkx_Dufer%20food%20overhead%20hig%20res.jpg?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1057&q=80");
+
+}
+
+
+
+
